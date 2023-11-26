@@ -1,0 +1,505 @@
+/* CSS Document */
+
+
+header {
+	height: 90vh;
+	min-height: 500px;
+}
+header .header_holder {
+	height: 100%;
+}
+
+header .angle_shape {
+	position: absolute;
+	top: auto;
+	bottom: -5px;
+	width: 100%;
+}
+
+.banner_right_img {
+	transform: translateY(35%);
+}
+
+
+@media screen and (min-width: 1601px) {
+
+.banner_right_img {
+	transform: translateY(25%);
+	width: 100%;
+	max-width: max-content;
+	float: right;
+	position: absolute;
+	right: 10%;
+}
+.banner_right_img img {
+	max-width: 100%;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+.banner_right_img {
+	transform: translateY(20%);
+	max-width: max-content;
+	float: right;
+}
+
+}
+
+
+@media screen and (max-width: 1440px) {
+.meet_galsie_section .item_content .h3 {
+	font-size: 32px;
+}
+
+
+img{
+	max-width: 100%;
+} 
+.meet_galsie_section .sec_title_text::before {
+/*	background: url("../images/title_left_line.png") no-repeat scroll center left / 100% 100%;*/
+background: linear-gradient(270deg, #383838 35.27%, rgba(56, 56, 56, 0.00) 100%);
+	height: 1px;
+	width: calc(50% - 175px);
+
+} 
+.meet_galsie_section .sec_title_text::after {
+/*	background: url("../images/title_right_line.png") no-repeat scroll center left / 100% 100%;*/
+background: linear-gradient(270deg, #383838 35.27%, rgba(56, 56, 56, 0.00) 100%);
+	height: 1px;
+	width: calc(50% - 175px);
+} 
+
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+header {
+	background: url("../images/main_banner.png") no-repeat scroll center top / cover;
+	background-color: var(--black);
+}
+
+.banner_right_img {
+	transform: translateY(15%);
+	max-width: max-content;
+	max-width: 100%;
+}
+
+.banner_title .h1 {
+	font-size: 40px;
+	margin: 0;
+}
+.banner_title .subtitle {
+	margin: 15px 0 0;
+	font-size: 24px;
+}
+.header_content {
+	padding-top: 50px;
+}
+
+.header_content .banner_title {
+    padding: 0 15px;
+}
+
+.banner_right_img {
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width: 100%;
+}
+.plr_80 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.meet_galsie_section .item_content .h3 {
+	font-size: 25px;
+}
+
+.research_development_section .grid_box .col_item .item_content .item_desc_box {
+	max-width: calc(100% - 40px);
+}
+
+.research_development_section .grid_box .col_item .item_content .item_desc_text p {
+	font-size: 16px;
+}
+.meet_galsie_section .grid_box {
+	padding: 60px 40px;
+}
+#darkorlight {
+	top: 65px;
+
+}
+
+}
+@media (max-width: 1024px) {
+
+
+header {
+	background: url("../images/main_banner.png") no-repeat scroll center top / cover;
+	background-color: var(--black);
+}
+
+.sec_head_desc p {
+	font-size: 24px;
+	line-height: 33px;
+}
+.meet_galsie_section .sec_head_desc p br {
+	display: none;
+}
+.sec_title_text {
+	font-size: 36px;
+}
+
+.banner_right_img {
+	padding-top: 15px;
+	margin: 0 auto;
+	max-width: max-content;
+}
+.banner_right_img img {
+	max-width: 90%;
+}
+
+
+
+}
+
+@media (max-width: 992px) {
+
+
+.banner_right_img {
+	padding-top: 15px;
+	margin: 0 auto;
+}
+
+.meet_galsie_section .grid_box {
+	grid-template-columns: repeat(1, 1fr);
+	display: flex;
+	overflow: auto;
+}
+
+.meet_galsie_section .grid_box .col_item {
+	flex: 0 0 360px;
+}
+
+
+.smart_products_section .grid_box {
+	display: flex;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.smart_products_section .col_item {
+	padding: 40px;
+	width: 100%;
+}
+
+.softwares_section .grid_box {
+	grid-template-columns: repeat(1, 1fr);
+	grid-row-gap: 32px;
+}
+
+.softwares_section .grid_box .col_item_2 {
+	border-left: 0px solid #383838;
+	border-right: 0px solid #383838;
+}
+.softwares_section .grid_box .col_item .item_content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.softwares_section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.get_in_touch_form {
+	padding: 30px 15px 0;
+}
+.getin_touch_section .grid_box .col_item_2 {
+	padding: 60px 40px 50px;
+}
+.meet_galsie_section .item_content .h3 {
+	font-size: 24px;
+	line-height: 37px;
+	margin-top: 0;
+}
+.meet_galsie_section .grid_box .item_desc_text p {
+	font-size: 18px;
+}
+.getin_touch_section .grid_box .col_item_2 {
+	padding: 32px 0px !important;
+}
+.getin_touch_section {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.getin_touch_section .grid_box .col_item_2 .getin_touch_head .h3 + p {
+	font-size: 18px;
+}
+.meet_galsie_section .grid_box .col_item .icon {
+	margin: 0;
+	width: 40px;
+	height: 40px;
+}
+.meet_galsie_section .sec_title_text {
+	font-size: 24px;
+}
+.meet_galsie_section .sec_title_text::before {
+	width: calc(50% - 100px);
+	top: 14px;
+}
+.meet_galsie_section .sec_title_text::after {
+	width: calc(50% - 100px);
+	top: 14px;
+}
+
+.softwares_section .grid_box .col_item .icon {
+	width: 40px;
+	height: 40px;
+	padding: 14px;
+}
+header #darkorlight {
+	right: 20px;
+	top: 70px;
+}
+ header .switch_mode ul li .btn_content span:nth-child(2) {
+	display: none;
+}
+header .switch_mode ul li{
+	max-width: 100%;
+	width: 32px;
+	height: 32px;
+	padding: 0 !important;
+
+}
+.switch_mode ul li .btn_content {
+	display: flex;
+	align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+}
+
+.switch_mode ul li .btn_content svg {
+	width: 20px;
+	margin: 0 auto;
+	display: block;
+	height: 20px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+.hide_mobile{
+	display: none;
+}
+.hide_desktop{
+	display: block;
+}
+
+header {
+	background: url("../images/main_banner.png") no-repeat scroll center top / cover;
+	background-color: var(--black);
+}
+
+.getin_touch_section .grid_box {
+	flex-wrap: wrap;
+}
+.getin_touch_section .grid_box .col_item_1 {
+	flex: 0 0 calc(100% - 0%);
+}
+
+.getin_touch_section .grid_box .col_item_2 {
+	padding: 60px 40px 50px;
+	flex: 0 0 calc(100% - 0%);
+}
+.getin_touch_section .grid_box .col_item_1 {
+	flex: 0 0 calc(100% - 0%);
+	background-size: 100% 100%;
+	height: auto;
+	padding: 30px 30px;
+	min-height: 285px;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul {
+	row-gap: 40px;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li label {
+	font-size: 24px;
+}
+
+.plr_80 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.research_development_section {
+	padding-top: 32px;
+	padding-bottom: 190px;
+}
+.research_development_section .grid_box .col_item .item_content .item_desc_box .title .h5 {
+	font-size: 24px;
+}
+.research_development_section .grid_box .col_item .item_content .item_desc_box {
+	max-width: calc(100% - 40px);
+	padding: 15px;
+}
+.getin_touch_section .grid_box {
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li p a {
+	font-size: 20px;
+}
+.meet_galsie_section .sec_title_text::before {
+	width: calc(50% - 100px);
+	top: 14px;
+} 
+.meet_galsie_section .sec_title_text::after {
+	width: calc(50% - 100px);
+	top: 14px;
+} 
+
+.get_in_touch_form form .form-group {
+    margin-bottom: 24px;
+}
+
+.meet_galsie_section .sec_head_desc {
+	padding: 0 30px;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+.banner_right_img img {
+	max-width: 100%;
+}
+.banner_right_img {
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width: 100%;
+	max-width: max-content;
+	float: none;
+}
+.banner_right_img img {
+	max-width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width: 590px) {
+
+.banner_title .h1 {
+	font-size: 35px;
+	margin: 0;
+}
+
+
+}
+@media screen and (max-width: 575px) {
+
+.meet_galsie_section .grid_box .col_item {
+	flex: 0 0 260px;
+}
+.meet_galsie_section .grid_box {
+	padding: 60px 15px;
+}
+
+.meet_galsie_section .sec_head_desc {
+	padding: 0 15px;
+}
+
+
+
+.getin_touch_head {
+	padding: 0 15px;
+}
+.getin_touch_section .grid_box .col_item_2 .getin_touch_head .h3 {
+	font-size: 24px;
+}
+
+footer .footer_section .flex_row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: column-reverse;
+}
+.footer_section p.copyright {
+	text-align: center;
+}
+
+.footer_section .social_media_links {
+	gap: 16px;
+	justify-content: center;
+}
+.meet_galsie_section .grid_box {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+
+.softwares_section .grid_box .col_item .item_desc_text p {
+	font-size: 16px;
+	line-height: 20.48px;
+}
+.item_desc_text p {
+	font-size: 18px;
+}
+
+.banner_title .subtitle {
+	font-size: 18px;
+}
+.softwares_section .grid_box .col_item .title .h4 {
+	font-size: 24px;
+}
+
+.smart_products_section .col_item .title .h3 {
+	font-size: 24px;
+}
+.smart_products_section .col_item {
+	padding: 15px;
+}
+.smart_products_section p {
+	font-size: 16px;
+}
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+.research_development_section .grid_box {
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 160px;
+}
+.research_development_section .grid_box .col_item .item_content .image img {
+	width: 100%;
+}
+
+}
+
+@media only screen and (max-height: 812px) and (orientation: portrait) {
+.banner_right_img {
+	max-width: max-content;
+}
+.banner_right_img {
+	transform: translateY(15%);
+}
+
+}
+
+
+@media only screen and (max-height: 760px) and (orientation: portrait) {
+
+.banner_right_img {
+	transform: translateY(5%);
+}
+
+}
+

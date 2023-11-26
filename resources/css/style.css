@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*--------------------Common CSS Start----------------*/
+:root {
+  --black: #121212;
+  --white: #ffffff; 
+  --col-title-color: #E0E0E0; 
+  --sec_head_desc_color: #DCDCDC; 
+  --item_desc_text: #A0A0A0;
+  --blue: #A8C7FA;
+}
+
+ *{
+box-sizing: border-box;
+font-family: Lato;
+ }
+
+body {
+margin: 0px;
+padding: 0px;
+}
+
+.text-center{
+text-align: center;
+}
+.plr_80{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.mb_16{
+	margin-bottom: 16px;
+}
+.container{
+width: 100%;
+max-width: 1280px;
+margin: 0 auto;
+}
+
+section{
+	width: 100%;
+/*	max-width: 1440px;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+/*--------------------Common CSS End----------------*/
+
+
+/*--------------------Header CSS Start----------------*/
+
+header {
+	width: 100%;
+	/* max-width: 1440px; */
+	margin: 0 auto;
+	background: url("../images/main_banner.png") no-repeat scroll center top / cover;
+	padding: 0 0px;
+	background-color: var(--black);
+	position: relative;
+}
+
+header .angle_shape svg {
+	width: 100% !important;
+	height: auto;
+}
+header .angle_shape {
+	position: relative;
+	top: 5px;
+}
+
+
+.header_content {
+	padding-top: 80px;
+	padding-bottom: 0px;
+}
+
+.banner_title {
+	margin-top: 80px;
+}
+
+.banner_title .h1 {
+	color: var(--white);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: Lato;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 900;
+	margin: 0;
+}
+
+.banner_title .subtitle {
+	color: var(--white);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 15px 0 0;
+}
+.banner_right_img {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 0px;
+	position: relative;
+	z-index: 9;
+	transform: none;
+}
+
+.header_content .ellipse_shape {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+	max-width: max-content;
+	margin: 0 auto;
+	z-index: 9;
+}
+/*--------------------Header CSS End----------------*/
+
+/*-------------------Meet galsie section Css start-------------------------*/
+.meet_galsie_section {
+	background-color: var(--black);
+	padding: 60px 0 0;
+}
+.meet_galsie_section .sec_title_text {
+	position: relative;
+	font-size: 40px;
+}
+.meet_galsie_section .sec_title_text::before {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 25px;
+/*	background: url("../images/title_left_line.png") no-repeat scroll center left / cover;*/
+	height: 1px;
+	width: calc(50% - 135px);
+	background: linear-gradient(270deg, #383838 35.27%, rgba(56, 56, 56, 0.00) 100%);
+	transform: rotate(180deg);
+}
+.meet_galsie_section .sec_title_text::after {
+	position: absolute;
+	content: "";
+	right: 0px;
+	top: 25px;
+/*	background: url("../images/title_right_line.png") no-repeat scroll center right / cover;*/
+	height: 1px;;
+	width: calc(50% - 135px);
+	background: linear-gradient(270deg, #383838 35.27%, rgba(56, 56, 56, 0.00) 100%);
+}
+.sec_title_text {
+	margin: 0;
+	color: var(--blue);
+	font-family: Lato;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.sec_head_desc p {
+	color: #fff;
+	text-align: center;
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 44.8px;
+}
+.meet_galsie_section .grid_box {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 16px;
+	padding: 60px 0;
+}
+.meet_galsie_section .sec_head_desc p {
+	margin-bottom: 0;
+}
+
+.meet_galsie_section .grid_box .col_item {
+	flex: 0 0 calc(33.3% - 8px);
+	background: #212121;
+	padding: 24px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.04);
+}
+.meet_galsie_section .grid_box .col_item .icon {
+	margin: 0;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2B3749;
+	border-radius: 80px;
+	padding: 8px;
+}
+.meet_galsie_section .grid_box .col_item .item_content .title {
+	display: flex;
+	column-gap: 8px;
+}
+
+.meet_galsie_section .item_content .h3 {
+	color: var(--col-title-color);
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 44.8px;
+	margin: 0;
+}
+.item_desc_text p {
+	color: var(--item_desc_text);
+	font-family: Lato;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.meet_galsie_section .grid_box .col_item .item_content .item_desc_text p {
+	color: var(--item_desc_text);
+	font-family: Lato;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+}
+
+/*-------------------Meet galsie section CSS End-------------------------*/
+
+/*-------------------Smart Products Section CSS Start-------------------------*/
+
+.smart_products_section .grid_box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 16px;
+}
+.smart_products_section {
+	background: #2A2A2A;
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+
+ .sec_header {
+	padding-bottom: 40px;
+}
+.sec_header p {
+	margin-bottom: 0;
+}
+.smart_products_section .col_item .item_desc_text p {
+	color: var(--item_desc_text);
+	font-family: Lato;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.smart_products_section .col_item {
+	background-color: #212121;
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.04);
+}
+.smart_products_section .col_item_1 {
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 2;
+}
+.smart_products_section .col_item_2 {
+   grid-row-start: 1;
+   grid-column-start: 2;
+   grid-row-end: 2;
+   grid-column-end: 3;
+   
+}
+.smart_products_section .col_item_3{
+   grid-row-start: 2;
+   grid-column-start: 2;
+   grid-row-end: 3;
+   grid-column-end: 3;
+   
+}
+.smart_products_section .col_item_1 .title .h3 {
+	text-align: center;
+	justify-content: center;
+}
+
+.smart_products_section .col_item_1 .item_desc_text {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.smart_products_section .col_item_1 .item_image {
+	display: flex;
+	justify-content: center;
+}
+.smart_products_section .col_item .title .h3 {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	color: var(--col-title-color);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.smart_products_section .col_item .title .h3 span.small_btn {
+	border-radius: 100px;
+	background: #A8C7FA;
+	color: #062E6F;
+	text-align: right;
+	font-family: Lato;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 8px;
+}
+
+/*-------------------Smart Products Section CSS End-------------------------*/
+
+
+
+/*-------------------Softwares Section CSS Start-------------------------*/
+.softwares_section {
+	background-color: var(--black);
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.softwares_section .grid_box {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 16px;
+	text-align: center;
+}
+
+.softwares_section .sec_header {
+	margin-bottom: 65px;
+	padding-bottom: 0;
+}
+
+
+.softwares_section .grid_box .col_item_2 {
+	border-left: 0px solid #383838;
+	border-right: 0px solid #383838;
+}
+
+
+.softwares_section .grid_box .col_item .icon {
+	margin: 0;
+	width: 56px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2B3749;
+	border-radius: 80px;
+	margin:  0  auto;
+}
+
+.softwares_section .grid_box .col_item {
+	padding: 24px;
+	background-color: #212121;
+	border-radius: 8px;
+}
+.softwares_section .grid_box .col_item .item_desc_text p {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 28.16px;
+	margin: 0;
+}
+
+.softwares_section .grid_box .col_item .title .h4 {
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	color: var(--col-title-color);
+	margin: 16px auto;
+}
+
+/*-------------------Softwares Section CSS End-------------------------*/
+
+/*-------------------Research-Development Section CSS Start-------------------------*/
+.research_development_section {
+	background-color: #2A2A2A;
+	padding-top: 65px;
+	padding-bottom: 205px;
+}
+.research_development_section .grid_box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 16px;
+}
+
+.research_development_section .grid_box .col_item .item_content {
+	position: relative;
+}
+
+.research_development_section .grid_box .col_item .item_content .item_desc_box {
+	position: absolute;
+	bottom: -140px;
+	border-radius: 16px;
+	background: #212121;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	max-width: calc(100% - 80px);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 24px;
+}
+.research_development_section .grid_box .col_item .item_content .item_desc_box .title .h5 {
+	color: #FFF;
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0;
+}
+
+.research_development_section .grid_box .col_item .item_content .item_desc_text p {
+	color: #FFF;
+	font-family: Lato;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	margin: 10px 0 0;
+}
+.hide_desktop{
+	display: none;
+}
+
+/*-------------------Research-Development Section CSS End -------------------------*/
+
+
+/*-------------------Get In Touch Section CSS Start -------------------------*/
+.getin_touch_section {
+	background-color: #121212;
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.getin_touch_section .grid_box {
+	display: flex;
+	grid-gap: 0px;
+}
+.getin_touch_section .grid_box .col_item_1 {
+	background: url("../images/contact_left_img.png") no-repeat scroll bottom left / cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 calc(100% - 56%);
+}
+ 
+.getin_touch_section .grid_box .col_item_1 .contact_info ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 60px;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li {
+	position: relative;
+	padding-left: 55px;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li.call::before {
+	position: absolute;
+	content: "";
+	background: url(../images/call_icon.svg) no-repeat scroll center left;
+	width: 32px;
+	height: 32px;
+	top: 5px;
+	left: 0;
+}
+
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li.email::before {
+	position: absolute;
+	content: "";
+	background: url(../images/email_icon.svg) no-repeat scroll center center;
+	width: 32px;
+	height: 32px;
+	top: 5px;
+	left: 0;
+}
+
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li label {
+	color: #FFF;
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li p {
+	margin: 0;
+}
+.getin_touch_section .grid_box .col_item_1 .contact_info ul li p a {
+	text-decoration: none;
+	color: #CECECE;
+	font-family: Lato;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-top: 10px;
+	display: block;
+}
+
+.getin_touch_section .grid_box .col_item_2 {
+	background-color: #121212;
+	padding: 60px 80px 50px;
+	flex: 0 0 calc(100% - 44%);
+}
+.getin_touch_head {
+	padding: 0 30px;
+}
+
+.getin_touch_section .grid_box .col_item_2 .getin_touch_head .h3 {
+	text-align: center;
+	color: #FFF;
+	font-family: Lato;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+.getin_touch_section .grid_box .col_item_2 .getin_touch_head .h3 + p {
+	color: #FFF;
+	text-align: center;
+	font-family: Lato;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.get_in_touch_form {
+	padding: 40px 40px 0;
+}
+
+.get_in_touch_form form input {
+	border-radius: 4px;
+	background: #212121;
+	width: 100%;
+	border: 0;
+	padding: 16px;
+	color: #fff;
+	font-family: Lato;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.get_in_touch_form form input, .get_in_touch_form form textarea::placeholder {
+	font-style: normal;
+}
+.get_in_touch_form form input:focus, .get_in_touch_form form textarea:focus{
+	outline: 0;
+}
+.get_in_touch_form form input::placeholder, .get_in_touch_form form .form-group #message::placeholder{
+font-size: 14px;
+color: #ACACAC;
+opacity: 1;
+font-style: italic;
+}
+.get_in_touch_form form .form-group {
+	margin-bottom: 40px;
+}
+
+.get_in_touch_form form .form-group #message {
+    border-radius: 4px;
+    background: #212121;
+    width: 100%;
+    border: 0;
+    padding: 18px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 1;
+    resize: vertical;
+    min-height: 175px;
+}
+
+.get_in_touch_form form button {
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+	background: var(--dark-primary-blue, #A8C7FA);
+	padding: 12px 10px;
+	border: 0;
+	width: 175px;
+	display: block;
+	font-family: Lato;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.64px;
+	color: #062E6F;
+	text-transform: uppercase;
+}
+.getin_touch_section .container {
+	max-width: 100%;
+}
+
+/*-------------------Get In Touch Section CSS End -------------------------*/
+
+
+/*-------------------Footer Section CSS Start -------------------------*/
+
+footer .footer_section {
+	background: var(--black);
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-top: 1px solid #3B3B3B;
+}
+
+.footer_section p.copyright {
+	margin: 0;
+	color: #FFF;
+	text-align: right;
+	font-family: Lato;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21.72px;
+}
+.footer_section .social_media_links {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	gap: 16px;
+}
+footer .footer_section .flex_row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_section .social_media_links li {
+	color: #FFF;
+	text-align: right;
+	font-family: Lato;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 27.22px;
+}
+.footer_section .social_media_links li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*-------------------Footer Section CSS End -------------------------*/
